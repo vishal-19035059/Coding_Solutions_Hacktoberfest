@@ -18,6 +18,11 @@ function addImage(){
 	console.log("This function will be used to add images:");
 }
 
+function generateRandomNumber(){
+	let num = Math.random()*100;
+	return num;
+}
+
 function init(){
 
   //function init define the objects that we will have in the game
