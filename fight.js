@@ -14,6 +14,9 @@ function load_images(){
 
 }
 
+function addImage(){
+	console.log("This function will be used to add images:");
+}
 
 function init(){
 
