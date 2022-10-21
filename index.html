@@ -1,36 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Covid Fighter Game</title>
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Monster Killer</title>
+    <link rel="stylesheet" href="sty.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section id="headd">
+      <h2>Assignment (Mini-Task Manager)</h2>
+    </section>
+    <section id="controls">
+      <button id="Create-btn">Create task</button>
+      <button id="Assign-btn">Assign a task to a user</button>
+      <button id="Update-btn">Update Task </button>
+      <button id="Delete-btn">Delete task</button>
+      <button id="View-btn">View task based on the date and priority</button>
+      <button id="Drag-btn">Being able to drag and drop task from one priority to another </button>
+    </section>
 
-		}
-		h1{
-			position: absolute;
-			top:40px;
-			left: 350px;
-			color: black;
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    <section id="Box">
 
-		  }
+        <div class="input-group">
+            <div class="form-outline">
+              <input id="search-focus" type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
 
-		canvas{
-			background-image: url("images/bg1.jpg");
-			border:5px solid black;
-			margin-top: 1px;
-			margin-left: 2px;
-			width: 80%;
-			
-		}
-		</style>
-</head>
-<body>
-        <h1>COVID FIGHTER GAME</h1>
-		<canvas id="mycanvas"></canvas>
-	    <script type="text/javascript" src="fight.js"></script>
 
-</body>
+<table id="employee" class="table table-bordered table table-hover" cellspacing="0" width="100%">
+     <colgroup><col><col><col></colgroup>
+      <thead>
+      <tr>
+            <th>Id</th>
+            <th >Messages</th>
+            <th>Priority</th>
+            <th>Assign_to</th>
+            <th>Assign_Name</th>
+            <th>Created_on</th>
+            <th>Due_Date</th>
+      </tr>
+      </thead>
+      <tbody id="emp_body">
+        <tr>
+            <td>122</td>
+            <td>"HI"</td>
+        </tr>
+       
+      </tbody>
+</table>
+<div id="pager">
+      <ul id="pagination" class="pagination-sm"></ul>
+</div>
+    </section>
+
+   
+  </body>
 </html>
