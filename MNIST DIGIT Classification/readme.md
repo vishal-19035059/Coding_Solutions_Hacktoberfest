@@ -6,5 +6,5 @@
  
 # Model Accuracy = 99.621
 
-![GitHub Logo](https://raw.githubusercontent.com/vishalsingha/Mnist-Classification/main/images/accuracy_plot.png)
+
 
