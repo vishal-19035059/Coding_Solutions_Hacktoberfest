@@ -1,8 +1,0 @@
-django
-whitenoise
-psycopg2
-python-dotenv
-django-location-field
-pillow
-channels
-channels_redis
