@@ -9,7 +9,8 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-vector<int>tree , A;
+#define N 200005
+int tree[4*N]={} , A[N]={};
 
 void build(int node, int start, int end)
 {
@@ -29,3 +30,4 @@ void build(int node, int start, int end)
         tree[node] = tree[2*node] + tree[2*node+1];
     }
 }
+
