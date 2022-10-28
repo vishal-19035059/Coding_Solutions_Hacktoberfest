@@ -58,5 +58,14 @@ int find(int i,int tight,int countOnes,string nums){
 
   return dp[i][tight][countOnes]=ans;
  }
+   int brute_force(int nums){
+       int ans=0;
+       for(int i=1;i<=nums;++i){
+           string str=to_string(i);
+           ans+=count(str.begin(),str.end(),'1');           
+       }
+       return ans;       
+       
+   }
 
 };
